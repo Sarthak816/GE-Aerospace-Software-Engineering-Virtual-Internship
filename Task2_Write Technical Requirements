@@ -1,0 +1,43 @@
+TECHNICAL REQUIREMENTS FOR SUPPLY CHAIN FEATURE:
+
+Business Requirements:
+
+The system must recommend the best time to order new plane parts by considering factors such as the part's last replacement date, the average replacement interval, and estimated shipping duration.
+Order timings should be optimized to prevent shortages while keeping inventory costs minimal.
+
+Machine Learning:
+
+A machine learning model should be implemented to predict the ideal order time for plane parts. This model should be trained using historical data, including:
+Last replacement date of the part.
+Average time between replacements.
+Estimated shipping duration.
+
+Data Access:
+
+The system must have access to all necessary data, including:                                       Last replacement date.                                                                                                   Average replacement interval.                                                                                     Estimated shipping time.
+Data should be updated regularly to maintain accurate predictions.
+
+Key Metrics:
+
+To prevent shortages, the system must track and reduce instances where demand surpasses supply. This can be assessed by monitoring:
+
+The frequency of stock-outs over a period.
+Lead times (from order placement to delivery) compared to expected usage rates.
+
+2. The system must optimize inventory management by reducing excess stock while ensuring availability. This can be evaluated using:
+
+Inventory turnover ratio (how often stock is used and replenished).
+Carrying cost of inventory (total storage expenses).
+Fill rate (percentage of demand fulfilled by available stock).
+
+3. The system’s performance should be measured using:
+
+Accuracy of predicted order times.
+Number of shortages despite system recommendations.
+Cost savings achieved by following the suggested order schedule.
+
+Design and Implementations:
+
+The system must feature a user-friendly interface that clearly presents recommended order times.
+Users should be able to input new data and modify existing records.
+The system should efficiently process large datasets and provide accurate predictions in a timely manner
